@@ -131,7 +131,7 @@ body {
 }
 
 .logo {
-  background-image: url(/img/logo2.png) !important;
+  background-image: url(./../img/logo2.png) !important;
   background-size: cover;
   background-position: center;
   height: 100%;
