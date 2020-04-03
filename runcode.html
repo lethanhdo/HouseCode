@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css-runcode/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+<body>
+    <div class="contain">
+        <div class="control d-flex">
+            <div class="control-btn">
+                <button type="button" class="btn btn-info btn-home"><a href="index.html"><i class="fas fa-home" style="color: #fff;"></i></a></button>
+                <button type="button" class="btn btn-info btn-change-h" onclick="myFunctionH()"><i class="fas fa-arrows-h"></i></i></button>
+                <button type="button" class="btn btn-info btn-change-v" onclick="myFunctionV()"><i class="fas fa-arrows-v"></i></button>
+                <button type="button" class="btn btn-info btn-run" id="demo">Run</button>
+    
+            </div>
+            <div class="control-size">
+                <p>330x200</p>
+            </div>
+    
+        </div>
+        <div class="frame row input">
+            <div id="input" class="col-12 col-md-6 input">
+                    <textarea name="" id="" cols="30" rows="25"></textarea>
+            </div>
+            <div id="output" class="col-12 col-md-6 output">
+                <iframe src="./index.html" ></iframe>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function myFunctionV() {
+            document.getElementById("input").className = "col-md-12"; 
+            document.getElementById("output").className = "col-md-12"; 
+        }
+        function myFunctionH() {
+            document.getElementById("input").className = "col-md-6"; 
+            document.getElementById("output").className = "col-md-6"; 
+        }
+        </script>
+</body>
+</html>

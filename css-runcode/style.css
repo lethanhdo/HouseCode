@@ -1,0 +1,51 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #eeeeee;
+}
+
+.contain {
+  width: 100%;
+  height: 660px;
+  padding: 2%;
+  background-color: #eeeeee;
+}
+
+.frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.frame iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.frame textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.control {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 30px;
+}
+
+.frame-d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.col-md-12 {
+  height: 300px;
+}
+/*# sourceMappingURL=style.css.map */

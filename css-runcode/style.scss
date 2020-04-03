@@ -1,0 +1,39 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(238,238,238);
+}
+.contain{
+    width: 100%;
+    height: 660px;
+    padding: 2%;
+    background-color: rgb(238,238,238);
+}
+.frame{
+    display: flex;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+    textarea{
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+.control{
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    &-btn{
+        .btn-home{
+
+        }
+    }
+}
+.frame-d{
+    display: flex;
+    flex-direction: column!important;
+}
+.col-md-12{
+    height: 300px;
+}
