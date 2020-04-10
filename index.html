@@ -14,141 +14,121 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 <body>
-    <!-- Menu -->
-    <div class="menu-menu">
-        <ul class="menu">
-            <li><a class="logo" href="#">
-                <!-- <i class="fas fa-home"></i> -->
-                
-            </a></li>
-            <li><a href="./html-home.html">HTML</a>
-                <ul class="submenu">
-                    <li><a href="./html-tutorial.html">HTML Tutorial</a></li>
-                    <li><a href="#">HTML Forms</a></li>
-                    <li><a href="#">HTML Graphics</a></li>
-                    <li><a href="#">HTML Media</a></li>
-                    <li><a href="#">HTML APIs</a></li>
-                    <li><a href="#">HTML Examples</a></li>
-                    <li><a href="#">HTML References</a></li>
-                </ul>
-            </li>
-            <li><a href="./js-home.html">CSS</a>
-                <ul class="submenu">
-                    <li><a href="./css-tutorial.html">CSS Tutorial</a></li>
-                    <li><a href="#">CSS Advanced</a></li>
-                    <li><a href="#">CSS Responsive</a></li>
-                    <li><a href="#">CSS Grid</a></li>
-                    <li><a href="#">CSS Examples</a></li>
-                    <li><a href="#">CSS References</a></li>
-                </ul>
-            </li>
-            <li><a href="./js-home.html">JavaScript</a>
-                <ul class="submenu">
-                    <li><a href="./js-tutorial.html">JS Tutorial</a></li>
-                    <li><a href="#">JS Forms</a></li>
-                    <li><a href="#">JS Objects</a></li>
-                    <li><a href="#">JS Functions</a></li>
-                    <li><a href="#">JS HTML DOM</a></li>
-                    <li><a href="#">JS Browser BOM</a></li>
-                    <li><a href="#">JS AJAX</a></li>
-                    <li><a href="#">JS JSON</a></li>
-                    <li><a href="#">JS vs jQuery</a></li>
-                    <li><a href="#">JS Examples</a></li>
-                    <li><a href="#">JS References</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#">How to</a>
-            </li>
-            <li><a href="#">More</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">HMTL</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Server Side</a></li>
-                    <li><a href="#">Web Building</a></li>
-                    <li><a href="#">XML</a></li>
-                </ul> -->
-            </li>
-            <li><a href="./exercise.html">Exercises</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">Exercises</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Certificates</a></li>
-                </ul> -->
-            </li>
-            <li>
-                <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-                      aria-label="Search">
-                    <i class="fas fa-search" aria-hidden="true" style="color: #fff;"></i>
-                  </form>
-                
-            </li>
-        </ul>
-    </div>
-
-    <!-- Side Navigation -->
-
-    <!-- Header -->
-    <header class="w3-container w3-theme w3-padding" id="myHeader">
-        <!-- <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>  -->
-        <!-- <div class="w3-center">
-  <h4>BEAUTIFUL RESPONSIVE WEB SITES</h4>
-  <h1 class="w3-xxxlarge w3-animate-bottom">BUILT WITH W3.CSS</h1>
-    <div class="w3-padding-32">
-      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
-    </div>
-  </div> -->
-    </header>
-
    
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-third">
+    <!--Navbar -->
+    <section class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+    </section>
+    
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner">
+            <img src="img/ban.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- diamond -->
+    <div class="w3-row-padding w3-center w3-margin-top diamond">
+        <div class="w3-third w3-third-html">
             <div class="w3-card w3-container w3-card-html" >
-                <a href="./html-home.html" class="overlay">
+                <a href="#" class="overlay">
                 </a>
-                <a href="#">
+                <a href="#" class="icon-dia">
                     <i class="far fa-gem diamond-html w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
                         <h3>HTML</h3><br>
-                        <p>The language for building web pages</p>
-                        <!-- <p>Mobile first fluid grid</p>
-                        <p>Fits any screen sizes</p>
-                        <p>PC Tablet and Mobile</p> -->
-                        <button type="button" class="btn btn-primary">Learn</button>
+                        <p>Ngôn ngữ để xây dựng trang web</p>
+                </a>
+                <a href="#" class="description">
+                    <p>HTML là ngôn ngữ đánh dấu tiêu chuẩn cho các trang Web.
+                        <br>
+                        Với HTML, bạn có thể tạo Trang web của riêng mình.
+                        <br>
+                        HTML như là bộ khung của trang web. 
+                        <br>
+                        Ví dụ: bạn có thể hiểu một cách đơn giản 
+                        HTML là một viên kim cương thô...
+                    </p>
                 </a>
             </div>
         </div>
 
-        <div class="w3-third">
+        <div class="w3-third w3-third-css">
             <div class="w3-card w3-container w3-card-css" >
                 <a href="./css-home.html" class="overlay">
                 </a>
                 <a href="#">
                     <i class="far fa-gem diamond-css w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
                     <h3>CSS</h3><br>
-                    <p>The language for styling web pages</p>
-                    <!-- <p>Easy to learn</p>
-                    <p>No need for jQuery</p>
-                    <p>No JavaScript library</p> -->
-                    <button type="button" class="btn btn-primary">Learn</button>
+                    <p>Ngôn ngữ mô tả phong cách của một tài liệu HTML.</p>
+                </a>
+                <a href="#" class="description">
+                    <p>CSS là ngôn ngữ mô tả phong cách của một tài liệu HTML.
+                         <br>
+                        CSS mô tả cách các phần tử HTML sẽ được hiển thị.
+                        <br>
+                        Ví dụ: bạn có thể hiểu một cách đơn giản 
+                        CSS làm viên kim cương thô kia có màu đỏ...
+                    </p>
                 </a>
             </div>
         </div>
 
-        <div class="w3-third">
+        <div class="w3-third w3-third-js">
             <div class="w3-card w3-container w3-card-js">
                 <a href="./js-home.html" class="overlay">
                 </a>
                 <a href="./js-home.html">
-                    <i class="far fa-gem diamond-js w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                    <i class="fas fa-gem diamond-js w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
                     <h3>JavaScript</h3><br>
-                    <p>The language for programming web </p>
+                    <p>Ngôn ngữ lập trình của HTML và Web.</p>
                     <!-- <p>Bold colors and shadows</p>
                     <p>Equal across platforms</p>
                     <p>Equal across devices</p> -->
-                    <button type="button" class="btn btn-primary">Learn</button>
+                </a>
+                <a href="#" class="description">
+                    <p>JavaScript là ngôn ngữ lập trình của HTML và Web.
+                        <br>
+                        Với JavaScript, bạn có thể lập trình hành vi của các trang web
+                        <br>
+                        JavaScript như là sự sống của trang web. 
+                        <br>
+                        Ví dụ: bạn có thể hiểu một cách đơn giản 
+                        JavaScript giúp viên kim cương của bạn có thể chuyển động ...
+                    </p>
                 </a>
             </div>
         </div>
@@ -157,7 +137,7 @@
     <div class="containerr">
         <div class="html row">
             <div class="col-12 col-md-6 html-desciption">
-                <h2>INTRODUCTION HTML ?</h2>
+                <h2>GIỚI THIỆU HTML ?</h2>
                 <div class="text-scroll text-scroll-html" style="height: 200px; height: 300px;">
                     <p>
                         <h3>What is HTML ?</h3>
@@ -183,7 +163,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 html-example">
-                <h2>HTML EXAMPLE</h2>
+                <h2>HTML KẾT QUẢ</h2>
                 <div html-example-first>
                     <div class="input-code">
                     <!-- <textarea id="w3mission" rows="12" cols="50"> -->
