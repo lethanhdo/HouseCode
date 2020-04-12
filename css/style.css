@@ -112,7 +112,21 @@ a {
   position: relative;
 }
 
+
 .diamond .w3-card-html:hover .overlay {
+
+.logo {
+  background-image: url(./../img/logo2.png) !important;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.menu a {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
   display: block;
 }
 

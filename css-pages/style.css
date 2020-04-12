@@ -66,7 +66,57 @@ body {
           align-items: center;
 }
 
+
 .part-1-description .exam {
+.logo {
+  background-image: url(./../img/logo2.png) !important;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.menu a {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  line-height: 54px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #fff !important;
+}
+
+/* onhover styles */
+.menu li:hover {
+  background-color: #138792 !important;
+  font-size: 105%;
+  color: #fff !important;
+}
+
+.menu li:hover > a {
+  border-radius: 5px 0 0 0;
+  font-size: 105%;
+}
+
+/* submenu styles */
+.submenu {
+  left: 0;
+  max-height: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 0;
+  -webkit-perspective: 400px;
+  -ms-perspective: 400px;
+  -o-perspective: 400px;
+  perspective: 400px;
+}
+
+.submenu li {
+  opacity: 0;
   width: 100%;
 }
 
