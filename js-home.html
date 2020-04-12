@@ -14,334 +14,263 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 <body>
-    <!-- Menu -->
-    <div class="menu-menu">
-        <ul class="menu">
-            <li><a class="logo" href="index.html">
-                    <!-- <i class="fas fa-home"></i> -->
-                </a></li>
-            <li><a href="./html-home.html">HTML</a>
-                <ul class="submenu">
-                    <li><a href="./html-tutorial.html">HTML Tutorial</a></li>
-                    <li><a href="#">HTML Forms</a></li>
-                    <li><a href="#">HTML Graphics</a></li>
-                    <li><a href="#">HTML Media</a></li>
-                    <li><a href="#">HTML APIs</a></li>
-                    <li><a href="#">HTML Examples</a></li>
-                    <li><a href="#">HTML References</a></li>
-                </ul>
-            </li>
-            <li><a href="./css-home.html">CSS</a>
-                <ul class="submenu">
-                    <li><a href="./css-tutorial.html">CSS Tutorial</a></li>
-                    <li><a href="#">CSS Advanced</a></li>
-                    <li><a href="#">CSS Responsive</a></li>
-                    <li><a href="#">CSS Grid</a></li>
-                    <li><a href="#">CSS Examples</a></li>
-                    <li><a href="#">CSS References</a></li>
-                </ul>
-            </li>
-            <li class="active" style="background-color: #138792!important;">
-                <a href="./js-home.html">JavaScript</a>
-                <ul class="submenu">
-                    <li><a href="./js-tutorial.html">JS Tutorial</a></li>
-                    <li><a href="#">JS Forms</a></li>
-                    <li><a href="#">JS Objects</a></li>
-                    <li><a href="#">JS Functions</a></li>
-                    <li><a href="#">JS HTML DOM</a></li>
-                    <li><a href="#">JS Browser BOM</a></li>
-                    <li><a href="#">JS AJAX</a></li>
-                    <li><a href="#">JS JSON</a></li>
-                    <li><a href="#">JS vs jQuery</a></li>
-                    <li><a href="#">JS Examples</a></li>
-                    <li><a href="#">JS References</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#">How to</a>
-            </li>
-            <li><a href="#">More</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">HMTL</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Server Side</a></li>
-                    <li><a href="#">Web Building</a></li>
-                    <li><a href="#">XML</a></li>
-                </ul> -->
-            </li>
-            <li><a href="./exercise.html">Exercises</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">Exercises</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Certificates</a></li>
-                </ul> -->
-            </li>
-            <li>
-                <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-                        aria-label="Search">
-                    <i class="fas fa-search" aria-hidden="true" style="color: #fff;"></i>
-                </form>
-
-            </li>
-        </ul>
-    </div>
+    <!-- navbar -->
+    <section class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-coffeecode.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html-home.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="css-home.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="js-home.html">JavaScript</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Nhập vào đây" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+              </form>
+            </div>
+        </nav>
+    </section>
 
     <!-- contain -->
     <div class="contain-html row">
         <div class="col-2 silebar">
-            <nav>
-                <ul>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="./js-tutorial.html">JS Tutorial</a>
-                        <ul class="sub-menu">
-                            <li><a href="./js-statements.html">JS Statements</a></li>
-                            <li><a href="#">JS Variables</a></li>
-                            <li><a href="#">JS Functions</a></li>
-                            <li><a href="#">JS Objects</a></li>
-                            <li><a href="#">JS Events</a></li>
-                            <li><a href="#">JS Arrays</a></li>
-                            <li> <a href="#">JS Conditions</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#" class="big-item">JS Forms</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">JS Forms</a></li>
-                            <li><a href="#">Forms API</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS Objects</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Object Definitions</a></li>
-                            <li><a href="#">Object Properties</a></li>
-                            <li><a href="#">Object Methods</a></li>
-                            <li><a href="#">Object Constructors </a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS Functions</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Function Definitions</a></li>
-                            <li><a href="#">Function Parameters</a></li>
-                            <li><a href="#">Function Call</a></li>
-                            <li><a href="#">Function Apply</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS HTML DOM</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">DOM Methods</a></li>
-                            <li><a href="#">DOM Document</a></li>
-                            <li><a href="#">DOM Elements</a></li>
-                            <li><a href="#">DOM HTML</a></li>
-                            <li><a href="#">DOM CSS</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS Browser BOM</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">JS Window</a></li>
-                            <li><a href="#">JS Screen</a></li>
-                            <li><a href="#">JS Location</a></li>
-                            <li><a href="#">JS History</a></li>
-                            <li><a href="#">JS Navigator</a></li>
-                            <li><a href="#">JS Cookies</a></li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </nav>
+           
         </div>
 
         <div class="col-8 contain-body">
+            <!-- Button-Pre-Next -->
             <section>
-                <a href="./index.html"><button type="button" class="btn btn-primary">&laquo; Home</button></a>
-                <a href="./js-tutorial.html"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
+                <a href="css-tutorial.html"><button type="button" class="btn btn-primary">&laquo; Trước</button></a>
+                <a href="js-tutorial.html"><button type="button" class="btn btn-primary">Sau &raquo;</button></a>
                 
             </section>
             <hr>
 
-            <!-- done -->
+            <!-- what-is-HTML -->
             <section>
                 <div class="part-1">
                     <div class="part-1-tittle">
-                        <h4>What is JavaScript?</h4>
+                        <h4>JavaScript là gì?</h4>
                     </div>
                     <div class="part-1-description row">
                         <div class="col-12 col-md-6 img">
-                            <a href="#">
-                                <div href="#" class="a">
-                                    <video class="video-fluid z-depth-1"  loop controls muted>
-                                        <source src="./video/What is JavaScript-.mp4" type="video/mp4" />
-                                      </video>
-                                    <!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal"
-                                        data-src="https://www.youtube.com/embed/A-twOC3W558" data-target="#myModal">
-                                        Play Video 3
-                                    </button>
-                                    <img src="./img/w.png" alt="">
-                                    <div class="overlay"></div>
-                                    <i class="far fa-play-circle"></i> -->
-                                </div>
-                                
-                            </a>
-
+                            <img class="w-i-html" src="img/w-js.jpg" alt="">
                         </div>
                         <div class="col-12 col-md-6 info">
                             <ul>
-                                <li>JavaScript is the programming language of HTML and the Web.</li>
-                                <li>JavaScript is easy to learn.</li>
-                                <li>This tutorial will teach you JavaScript from basic to advanced.</li>
+                                <li>JavaScript là ngôn ngữ lập trình của HTML và Web.</li>
+                                <li>JavaScript rất dễ học.</li>
+                                
                             </ul>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 info">
+                            <p>Hiểu đơn giản <br>
+                                Khi ngôi nhà của bạn đã được sơn và có 1 vài đồ đạc (html + css) <br>
+                                thì bạn sẽ nghĩ đến những tiện ích trong ngôi nhà mình <br>
+                                sẽ không ai muốn trong nhà có 1 cái tivi không xem được, 1 cái quạt không thể làm mát,
+                                1 bình nước nhưng không uống được... <br>
+
+                                Mà người ta sẽ muốn: đèn bật sáng, cửa tự động, điều hòa làm mát ,... <br>
+                                Tất cả những thứ đó có thể làm ra từ JavaScript <br>
+                                JavaScript sẽ giúp trang web của bạn hoạt động hiệu quả hơn...
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 img">
+                            <img class="w-i-html" src="img/js-house.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <br>
-                <p>Practical examples: If HTML is the framework of the program,
-                     CSS beautifies the interface, then Javascript makes the
-                      site work.
-                      <br>
-                    just like html is the skeleton, the body part is CSS.
-                     Javascript will make that person work.</p>
-                     <div>
-                         <img src="./img/big-picture (1).png" alt="" width="600" height="300">
-                     </div>
+               
             </section>
             <hr>
 
-             <!-- done -->
-             <section>
+            <!-- HTML-tag -->
+            <section>
                 <div class="part-1">
                     <div class="part-1-tittle">
-                        <h4>Why Study JavaScript?</h4>
+                        <h4>Cú pháp cơ bản</h4>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-6">
-                            <p>JavaScript is one of the 3 languages all web developers must learn:
-                                <br><br>
-                                <p>1. HTML to define the content of web pages</p>
-                                <p>2. CSS to specify the layout of web pages</p>
-                                <p>3. JavaScript to program the behavior of web pages</p>
+                    <div class="gach row">
+                        <div class="col-8 img-gach">
+                            <img src="img/jss.JPG" alt="">
                         </div>
-                        <div class="col-6">
-                            <img src="./img/w-js.jpg" alt="" width="100%">
+                        <div class="col-4 des-gach">
+                            Đây là cách khai báo key - value trong JavaScript <br>
+                            Key: Tên thuộc tính <br>
+                            Value: Giá trị <br>
+                            
                         </div>
                     </div>
                     
-                            <br><br>
-                        <p>Web pages are not the only place where JavaScript is used.
-                             Many desktop and server programs use JavaScript. Node.js is the best known.
-                              Some databases, like MongoDB and CouchDB, also use JavaScript as
-                               their programming language.</p>
+                    <p>Khai báo biến là 1 phần rất cơ bản trong JavaScript</p>
+                   
+                    <div class="part-1-description row">
+                            
+                            <div class="exam row">
+                                <div class="col-6">
+                                    <h1>Bài tập minh họa:</h1> Hãy nhập các phần key hoặc value : <br>
+                                    1.Tạo một biến được gọi carName và gán giá trị Volvocho nó. <br>
+                                    var   <input type="text"> = " <input type="text"> ";<br>
+                                    2.Tạo một biến được gọi dog và gán giá trị Mickey nó. <br>
+                                    var   <input type="text"> = " <input type="text"> ";<br>
+                                    3.Tạo một biến được gọi boy và gán giá trị Perter nó. <br>
+                                    var   <input type="text"> = " <input type="text"> ";<br>
+        
+                                    <button class="btn btn-primary" type="submit">Kiểm tra</button>
+                                </div>
+                                <div class="col-6">
+
+                                </div>
+                                
+                            </div>
+                            
                         
-                    </p>
+                    </div>
                 </div>
             </section>
             <hr>
 
-            <!-- done -->
+           
+            <!-- HTML-exam -->
             <section>
                 <div class="part-1">
                     <div class="part-1-tittle">
-                        <h4>Examples in Each Chapter</h4>
+                        <h4>Tài liệu HTML đơn giản</h4>
                     </div>
                     <div class="part-1-description row">
                         <div class="col-12 col-md-6 img">
-                            <h2>Example</h2>
-                            <p>With our "Run" editor, you can change all examples and view the results.</p>
+                            <h2>Ví dụ</h2>
                             <!-- <div href="#" class="a"> -->
-                                <div style="padding: 2%; border: 0.3px solid rgb(182, 182, 182);" >
-                                    <span class="tagnamecolor" style="color: brown";>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        DOCTYPE
-                                        <span class="attributecolor"> html</span>
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                    </span>
-                                    <br>    
-                                    <span class="tagnamecolor" style="color: brown";>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        html
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                    </span>
-                                    <br>
-                                
-                                    <span class="tagnamecolor" style="color: brown";>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        body
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                    </span>
-                                    <br>
-                                    <span class="tagnamecolor" style="color: brown";>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        h3
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                        <span class="tagcolor" style="color: black;">This is a heading</span>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        /h3
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                    </span>
-                                    <br>
-                                    <span class="tagnamecolor" style="color: brown";>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        button
-                                        <span style="color: red;">type</span>=
-                                        <span style="color: mediumblue;">"button"</span>
-                                        <span style="color: red;">onclick</span>=
-                                        <span style="color: mediumblue;">"document.getElementById('demo').innerHTML = Date()"></span>
-                                        <br><span class="tagcolor" style="color: black;">Click me to display Date and Time.</span>
-                                        <br><span class="tagcolor" style="color: mediumblue;"><</span>
-                                        /button
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
+                                <div class="" style="padding: 6%; border: 0.3px solid rgb(160, 160, 160);">
+                                    <span class="tagnamecolor" style="color: brown" ;>
+                                        <span class="tagcolor" style="color: mediumblue;">
+                                            <</span>
+                                                DOCTYPE
+                                                <span class="attributecolor"> html</span>
+                                                <span class="tagcolor" style="color: mediumblue;">></span>
+                                        </span>
                                         <br>
-            
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>p
-                                        <span style="color: red;">id</span>=
-                                        <span class="tagcolor" style="color: mediumblue;">demo"><</span>/p                           
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                    </span>
-                                    <br>
-                                    <span class="tagnamecolor" style="color: brown";>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        /body
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                    </span>
-                                    <br>
-                                    <span class="tagnamecolor" style="color: brown";>
-                                        <span class="tagcolor" style="color: mediumblue;"><</span>
-                                        /html
-                                        <span class="tagcolor" style="color: mediumblue;">></span>
-                                    </span>
-                                    <br>
+                                        <span class="tagnamecolor" style="color: brown" ;>
+                                            <span class="tagcolor" style="color: mediumblue;">
+                                                <</span>
+                                                    html
+                                                    <span class="tagcolor" style="color: mediumblue;">></span>
+                                            </span>
+                                            <br>
+                                            <span class="tagnamecolor" style="color: brown" ;>
+                                                <span class="tagcolor" style="color: mediumblue;">
+                                                    <</span>
+                                                        tittle
+                                                        <span class="tagcolor" style="color: mediumblue;">></span>
+                                                        <span class="tagcolor" style="color: black;">Page Tittle</span>
+                                                        <span class="tagcolor" style="color: mediumblue;">
+                                                            <</span>
+                                                                /tittle
+                                                                <span class="tagcolor" style="color: mediumblue;">></span>
+                                                        </span>
+                                                        <br>
+                                                        <span class="tagnamecolor" style="color: brown" ;>
+                                                            <span class="tagcolor" style="color: mediumblue;">
+                                                                <</span>
+                                                                    body
+                                                                    <span class="tagcolor" style="color: mediumblue;">></span>
+                                                            </span>
+                                                            <br><br>
+                                                            <span class="tagnamecolor" style="color: brown" ;>
+                                                                <span class="tagcolor" style="color: mediumblue;">
+                                                                    <</span>
+                                                                        h1
+                                                                        <span class="tagcolor"
+                                                                            style="color: mediumblue;">></span>
+                                                                        <span class="tagcolor" style="color: black;">My First
+                                                                            Heading</span>
+                                                                        <span class="tagcolor" style="color: mediumblue;">
+                                                                            <</span>
+                                                                                /h1
+                                                                                <span class="tagcolor"
+                                                                                    style="color: mediumblue;">></span>
+                                                                        </span>
+                                                                        <br>
+                                                                        <span class="tagnamecolor" style="color: brown" ;>
+                                                                            <span class="tagcolor" style="color: mediumblue;">
+                                                                                <</span>
+                                                                                    p
+                                                                                    <span class="tagcolor"
+                                                                                        style="color: mediumblue;">></span>
+                                                                                    <span class="tagcolor"
+                                                                                        style="color: black;">My first
+                                                                                        paragraph.</span>
+                                                                                    <span class="tagcolor"
+                                                                                        style="color: mediumblue;">
+                                                                                        <</span>
+                                                                                            /p
+                                                                                            <span class="tagcolor"
+                                                                                                style="color: mediumblue;">></span>
+                                                                                    </span>
+                                                                                    <br>
+                                                                                    <span class="tagnamecolor"
+                                                                                        style="color: brown" ;>
+                                                                                        <span class="tagcolor"
+                                                                                            style="color: mediumblue;">
+                                                                                            <</span>
+                                                                                                /body
+                                                                                                <span class="tagcolor"
+                                                                                                    style="color: mediumblue;">></span>
+                                                                                        </span>
+                                                                                        <br>
+                                                                                        <span class="tagnamecolor"
+                                                                                            style="color: brown" ;>
+                                                                                            <span class="tagcolor"
+                                                                                                style="color: mediumblue;">
+                                                                                                <</span>
+                                                                                                    /html
+                                                                                                    <span class="tagcolor"
+                                                                                                        style="color: mediumblue;">></span>
+                                                                                            </span>
+                                                                                            <br>
+                                                                                            <!-- </div> -->
+                                    <!-- btn_run_code -->
                                 </div>
-                                 <br>                                                   <!-- </div> -->
-                            <!-- btn_run_code -->
-                            <a href="./runcode.html" target="_blank">
-                                <button type="button" class="btn btn-primary" > Run</button>
+                                <br>
+                            <a href="runcode.html" target="_blank">
+                                <button type="button" class="btn btn-primary" > Chạy</button>
                             </a>
                         </div>
                         <div class="col-12 col-md-6 info">
-                            <h2>Example Explained</h2>
+                            <h2>Giải thích ví dụ</h2>
                             <ul>
-                                <li>The <span>
-                                        <</span><span>!DOCTYPE html></span> declaration defines this document to be
-                                            HTML5</li>
-                                <li>The <span>
-                                        <</span><span>html></span> element is the root element of an HTML page</li>
-                                <li>The <span>
-                                        <</span><span>head></span> element contains meta information about the document
+                                <li>Các <span>
+                                        <</span><span>!DOCTYPE html></span> tuyên bố xác định tài liệu này là HTML5</li>
+                                <li>Phần <span>
+                                        <</span><span>html></span> tử này là phần tử gốc của trang HTML</li>
+                                <li>Phần <span>
+                                        <</span><span>head></span> tử chứa thông tin meta về tài liệu
                                 </li>
-                                <li>The <span>
-                                        <</span><span>title></span> element specifies a title for the document</li>
-                                <li>The <span>
-                                        <</span><span>body></span> element contains the visible page content
-                                <li>The <span>
-                                        <</span><span>h1></span> element defines a large heading</li>
-                                <li>The <span>
-                                        <</span><span>p></span> element defines a paragraph</li>
+                                <li>Phần <span>
+                                        <</span><span>title></span> tử chỉ định một tiêu đề cho tài liệu</li>
+                                <li>Phần <span>
+                                        <</span><span>body></span> tử chứa nội dung trang hiển thị
+                                <li>Phần <span>
+                                        <</span><span>h1></span> tử xác định một tiêu đề lớn</li>
+                                <li>Phần <span>
+                                        <</span><span>p></span>tử định nghĩa một đoạn</li>
                             </ul>
                         </div>
                     </div>
@@ -349,15 +278,14 @@
             </section>
             <hr>
 
-            
-
            
-            
+             <!-- Button-Pre-Next -->
             <section>
-                <a href="./index.html"><button type="button" class="btn btn-primary">&laquo; Home</button></a>
-                <a href="./js-tutorial.html"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
+                <a href="css-tutorial.html"><button type="button" class="btn btn-primary">&laquo; Trước</button></a>
+                <a href="js-tutorial.html"><button type="button" class="btn btn-primary">Sau &raquo;</button></a>
             </section>
             <hr>
+
         </div>
 
         <div class="col-2 silebar">
@@ -365,6 +293,7 @@
 
         </div>
     </div>
+
 
     <!-- btn_run_code -->
     <div class="btn-run-code">

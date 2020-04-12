@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css-pages/style.css">
+<link rel="stylesheet" href="css-pages/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -14,404 +14,286 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 <body>
-    <!-- Menu -->
-    <div class="menu-menu">
-        <ul class="menu">
-            <li><a class="logo" href="index.html">
-                    <!-- <i class="fas fa-home"></i> -->
-                </a></li>
-            <li><a href="./html-home.html">HTML</a>
-                <ul class="submenu">
-                    <li><a href="./html-tutorial.html">HTML Tutorial</a></li>
-                    <li><a href="#">HTML Forms</a></li>
-                    <li><a href="#">HTML Graphics</a></li>
-                    <li><a href="#">HTML Media</a></li>
-                    <li><a href="#">HTML APIs</a></li>
-                    <li><a href="#">HTML Examples</a></li>
-                    <li><a href="#">HTML References</a></li>
-                </ul>
-            </li>
-            <li class="active" style="background-color: #138792!important;">
-                <a href="./css-home.html">CSS</a>
-                <ul class="submenu">
-                    <li><a href="./css-tutorial.html">CSS Tutorial</a></li>
-                    <li><a href="#">CSS Advanced</a></li>
-                    <li><a href="#">CSS Responsive</a></li>
-                    <li><a href="#">CSS Grid</a></li>
-                    <li><a href="#">CSS Examples</a></li>
-                    <li><a href="#">CSS References</a></li>
-                </ul>
-            </li>
-            <li><a href="./js-home.html">JavaScript</a>
-                <ul class="submenu">
-                    <li><a href="./js-tutorial.html">JS Tutorial</a></li>
-                    <li><a href="#">JS Forms</a></li>
-                    <li><a href="#">JS Objects</a></li>
-                    <li><a href="#">JS Functions</a></li>
-                    <li><a href="#">JS HTML DOM</a></li>
-                    <li><a href="#">JS Browser BOM</a></li>
-                    <li><a href="#">JS AJAX</a></li>
-                    <li><a href="#">JS JSON</a></li>
-                    <li><a href="#">JS vs jQuery</a></li>
-                    <li><a href="#">JS Examples</a></li>
-                    <li><a href="#">JS References</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#">How to</a>
-            </li>
-            <li><a href="#">More</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">HMTL</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Server Side</a></li>
-                    <li><a href="#">Web Building</a></li>
-                    <li><a href="#">XML</a></li>
-                </ul> -->
-            </li>
-            <li><a href="./exercise.html">Exercises</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">Exercises</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Certificates</a></li>
-                </ul> -->
-            </li>
-            <li>
-                <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-                        aria-label="Search">
-                    <i class="fas fa-search" aria-hidden="true" style="color: #fff;"></i>
-                </form>
-
-            </li>
-        </ul>
-    </div>
+    <!-- navbar -->
+    <section class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-coffeecode.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html-home.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="css-home.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="js-home.html">JavaScript</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Nhập vào đây" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+              </form>
+            </div>
+        </nav>
+    </section>
 
     <!-- contain -->
     <div class="contain-html row">
         <div class="col-2 silebar">
-            <nav>
-                <ul>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="./html-tutorial.html">CSS Tutorial</a>
-                        <ul class="sub-menu">
-                            <li><a href="./css-colors.html">CSS Colors</a></li>
-                            <li><a href="#">CSS Backgrounds</a></li>
-                            <li><a href="#">CSS Borders</a></li>
-                            <li><a href="#">CSS Margins</a></li>
-                            <li><a href="#">CSS Padding</a></li>
-                            <li><a href="#">CSS Height/Width</a></li>
-                            <li> <a href="#">CSS Text</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#" class="big-item">CSS Advanced</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">CSS Backgrounds</a></li>
-                            <li><a href="#">HTML Form Elements</a></li>
-                            <li><a href="#">CSS Text Effects</a></li>
-                            <li><a href="#">CSS Transformss</a></li>
-                            <li><a href="#">CSS Buttons</a></li>
-                            <li><a href="#">CSS Style Images</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">CSS Responsive</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">RWD Grid View</a></li>
-                            <li><a href="#">RWD Templates</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">CSS Grid</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Grid Intro</a></li>
-                            <li><a href="#">Grid Container</a></li>
-                            <li><a href="#">Grid Item</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">CSS Examples</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">CSS Templates</a></li>
-                            <li><a href="#">CSS Examples</a></li>
-                            <li><a href="#">CSS Quiz</a></li>
-                            <li><a href="#">CSS Exercises</a></li>
-                            <li><a href="#">CSS Certificate</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">CSS References</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">CSS Selectors</a></li>
-                            <li><a href="#">CSS Functions</a></li>
-                            <li><a href="#">CSS Animatable</a></li>
-                            <li><a href="#">CSS Colors</a></li>
-                            <li><a href="#">CSS Default Values</a></li>
-                            <li><a href="#">CSS Browser Support</a></li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </nav>
+            
         </div>
 
         <div class="col-8 contain-body">
+            <!-- Button-Pre-Next -->
             <section>
-                <a href="./index.html"><button type="button" class="btn btn-primary">&laquo; Home</button></a>
-                <a href="./css-tutorial.html"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
+                <a href="html-tutorial.html"><button type="button" class="btn btn-primary">&laquo; Trước</button></a>
+                <a href="css-tutorial.html"><button type="button" class="btn btn-primary">Sau &raquo;</button></a>
                 
             </section>
             <hr>
+
+            <!-- what-is-HTML -->
             <section>
                 <div class="part-1">
                     <div class="part-1-tittle">
-                        <h4>What is CSS?</h4>
+                        <h4>CSS là gì?</h4>
                     </div>
                     <div class="part-1-description row">
-                        <div class="col-12 col-md-6 img">
-                            <a href="#">
-                                <div href="#" class="a">
-                                    <video class="video-fluid z-depth-1"  loop controls muted>
-                                        <source src="./video/What is CSS-.mp4" type="video/mp4" />
-                                      </video>
-                                    <!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal"
-                                        data-src="https://www.youtube.com/embed/A-twOC3W558" data-target="#myModal">
-                                        Play Video 3
-                                    </button>
-                                    <img src="./img/w.png" alt="">
-                                    <div class="overlay"></div>
-                                    <i class="far fa-play-circle"></i> -->
-                                </div>
-                                
-                            </a>
-
+                        <div class="col-12 col-md-6 img-css">
                         </div>
                         <div class="col-12 col-md-6 info">
                             <ul>
-                                <li>CSS is a language that describes the style of an HTML document.</li>
-                                <li>CSS describes how HTML elements should be displayed.</li>
-                                <li>This tutorial will teach you CSS from basic to advanced.</li>
+                                <li>CSS là viết tắt của C ascading S tyle S heets</li>
+                                <li>CSS mô tả cách các phần tử HTML được hiển thị trên màn hình, giấy hoặc trong phương tiện khác</li>
+                                <li>CSS tiết kiệm rất nhiều công việc . Nó có thể kiểm soát bố cục của nhiều trang web cùng một lúc</li>
+                                <li>Các bảng định kiểu bên ngoài được lưu trữ trong các tệp CSS</li>
                             </ul>
+                        </div>
+                        
+                        <div class="col-12 col-md-4">
+                            <div class="img-house1"></div>
+                            <h2>HTML</h2>
+                        </div>
+                        <div class="col-12 col-md-4 info">
+                            <br>
+                            <p>Bạn còn nhớ ngôi nhà ở phần HTML ??? <br>
+                                Giờ ngôi nhà đó đã được thêm CSS, <br>
+                                Hãy xem kết quả ở hình bên... <br>
+                                Rất đẹp phải không...? Tương tự như trang web của bạn, <br>
+                                Hãy làm nó trở nên nhiều màu sắc và sinh động hơn !<br>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-4 ">
+                            
+                            <div class="img-house2"></div>
+                            <h2>HTML+CSS</h2>
                         </div>
                     </div>
                 </div>
+               
             </section>
             <hr>
-            <div>
-                <br><p>
-                    Put simply, css to make the look of a website more beautiful, 
-                    just like a normal person is html, after adding css will be makeup, 
-                    dressing and become more beautiful.
-                </p>
-                <img src="./img/w-css.jpg" alt="">
-            </div>
 
+            <!-- HTML-tag -->
             <section>
                 <div class="part-1">
                     <div class="part-1-tittle">
-                        <h4>Structure of CSS tag</h4>
+                        <h4>Cú pháp CSS</h4>
                     </div>
+                   
+                    <div class="img-ex">
+                        <img src="img/selector.gif" alt="">
+                    </div>
+                    <p>Bộ chọn trỏ đến phần tử HTML mà bạn muốn tạo kiểu.</p>
+                    <p>Khối khai báo chứa một hoặc nhiều khai báo được phân tách bằng dấu chấm phẩy.</p>
+                    <p>Mỗi khai báo bao gồm tên thuộc tính CSS và một giá trị, được phân tách bằng dấu hai chấm.</p>
+                    <p>Một khai báo CSS luôn kết thúc bằng dấu chấm phẩy và các khối khai báo được bao quanh bởi các dấu ngoặc nhọn.</p>
+
                     <div class="part-1-description row">
-                        <div class="col-12 col-md-6 img">
-                            <h2>Example</h2>
-                            <img src="./img/css-how.png" alt="">
+                        <div class="exam row">
+                            <div class="col-6">
+                                <h1>Bài tập minh họa:</h1> Hãy chọn đáp án đúng <br>
+                                <p>1.Thuộc tính "color" thì giá trị là gì?</p>
+                                <div class="answer d-flex">
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">red</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">15px</label>
+                                    <input type="radio" id="other" name="gender" value="other">
+                                    <label for="other">center</label>
+                                </div>
+                                <p>2.Thuộc tính "fontSize" thì giá trị là gì?</p>
+                                <div class="answer d-flex">
+                                    <input type="radio" id="male" name="genderr" value="male">
+                                    <label for="male">blue</label>
+                                    <input type="radio" id="female" name="genderr" value="female">
+                                    <label for="female">flex</label>
+                                    <input type="radio" id="other" name="genderr" value="other">
+                                    <label for="other">10px</label>
+                                </div>
+                                
+                                <button class="btn btn-primary" type="submit">Kiểm tra</button>
+                            </div>
+                            <div class="col-6">
+
+                            </div>
+                            
+                        </div>
                             
                         
                     </div>
                 </div>
             </section>
+            <hr>
+
+
+            <!-- HTML-exam -->
             <section>
                 <div class="part-1">
                     <div class="part-1-tittle">
-                        <h4>Examples in Each Chapter</h4>
+                        <h4>Tài liệu CSS đơn giản</h4>
                     </div>
                     <div class="part-1-description row">
                         <div class="col-12 col-md-6 img">
-                            <h2>Example</h2>
-                            <p>
-                                This CSS tutorial contains hundreds of CSS examples. <br> <br>
-
-                                With our online editor, you can edit the CSS, and click on
-                                 a button to view the result.
-                            </p>
-                            
+                            <h2>Ví dụ</h2>
                             <!-- <div href="#" class="a"> -->
-                                <div style="border: 0.2px solid rgb(179, 177, 177); padding: 6%;">
-                                    <span class="tagnamecolor" style="color: brown";>body 
-                                        <span class="tagcolor" style="color: black;">{</span><br>
-                                        <span class="tagcolor" style="color: red;">&emsp;background-color</span>
-                                        <span class="tagcolor" style="color: black;">:</span>
-                                        <span class="tagcolor" style="color: mediumblue;">lightblue</span>
-                                        <span class="tagcolor" style="color: black;">;</span><br>
-                                        <span class="tagcolor" style="color: black;">}</span>
-                                    </span>
-                                    <br>    
-                                    <span class="tagnamecolor" style="color: brown";>h1 
-                                        <span class="tagcolor" style="color: black;">{</span><br>
-                                        <span class="tagcolor" style="color: red;">&emsp;color</span>
-                                        <span class="tagcolor" style="color: black;">:</span>
-                                        <span class="tagcolor" style="color: mediumblue;">white</span>
-                                        <span class="tagcolor" style="color: black;">;</span><br>
-                                        <span class="tagcolor" style="color: red;">&emsp;text-align</span>
-                                        <span class="tagcolor" style="color: black;">:</span>
-                                        <span class="tagcolor" style="color: mediumblue;">center</span>
-                                        <span class="tagcolor" style="color: black;">;</span><br>
-                                        <span class="tagcolor" style="color: black;">}</span>
-                                    </span>
-                                    <br> 
-                                    <span class="tagnamecolor" style="color: brown";>p 
-                                        <span class="tagcolor" style="color: black;">{</span><br>
-                                        <span class="tagcolor" style="color: red;">&emsp;font-family</span>
-                                        <span class="tagcolor" style="color: black;">:</span>
-                                        <span class="tagcolor" style="color: mediumblue;">verdana</span>
-                                        <span class="tagcolor" style="color: black;">;</span><br>
-                                        <span class="tagcolor" style="color: red;">&emsp;font-size</span>
-                                        <span class="tagcolor" style="color: black;">:</span>
-                                        <span class="tagcolor" style="color: mediumblue;">20px</span>
-                                        <span class="tagcolor" style="color: black;">;</span><br>
-                                        <span class="tagcolor" style="color: black;">}</span>
-                                    </span>
-                                </div>
-                               
+                                <div class="" style="padding: 6%; border: 0.3px solid rgb(160, 160, 160);">
+                                    <span class="tagnamecolor" style="color: brown" ;>
+                                        <span class="tagcolor" style="color: mediumblue;">
+                                            <</span>
+                                                DOCTYPE
+                                                <span class="attributecolor"> html</span>
+                                                <span class="tagcolor" style="color: mediumblue;">></span>
+                                        </span>
+                                        <br>
+                                        <span class="tagnamecolor" style="color: brown" ;>
+                                            <span class="tagcolor" style="color: mediumblue;">
+                                                <</span>
+                                                    html
+                                                    <span class="tagcolor" style="color: mediumblue;">></span>
+                                            </span>
+                                            <br>
+                                            <span class="tagnamecolor" style="color: brown" ;>
+                                                <span class="tagcolor" style="color: mediumblue;">
+                                                    <</span>
+                                                        tittle
+                                                        <span class="tagcolor" style="color: mediumblue;">></span>
+                                                        <span class="tagcolor" style="color: black;">Page Tittle</span>
+                                                        <span class="tagcolor" style="color: mediumblue;">
+                                                            <</span>
+                                                                /tittle
+                                                                <span class="tagcolor" style="color: mediumblue;">></span>
+                                                        </span>
+                                                        <br>
+                                                        <span class="tagnamecolor" style="color: brown" ;>
+                                                            <span class="tagcolor" style="color: mediumblue;">
+                                                                <</span>
+                                                                    body
+                                                                    <span class="tagcolor" style="color: mediumblue;">></span>
+                                                            </span>
+                                                            <br><br>
+                                                            <span class="tagnamecolor" style="color: brown" ;>
+                                                                <span class="tagcolor" style="color: mediumblue;">
+                                                                    <</span>
+                                                                        h1
+                                                                        <span class="tagcolor"
+                                                                            style="color: mediumblue;">></span>
+                                                                        <span class="tagcolor" style="color: black;">My First
+                                                                            Heading</span>
+                                                                        <span class="tagcolor" style="color: mediumblue;">
+                                                                            <</span>
+                                                                                /h1
+                                                                                <span class="tagcolor"
+                                                                                    style="color: mediumblue;">></span>
+                                                                        </span>
+                                                                        <br>
+                                                                        <span class="tagnamecolor" style="color: brown" ;>
+                                                                            <span class="tagcolor" style="color: mediumblue;">
+                                                                                <</span>
+                                                                                    p
+                                                                                    <span class="tagcolor"
+                                                                                        style="color: mediumblue;">></span>
+                                                                                    <span class="tagcolor"
+                                                                                        style="color: black;">My first
+                                                                                        paragraph.</span>
+                                                                                    <span class="tagcolor"
+                                                                                        style="color: mediumblue;">
+                                                                                        <</span>
+                                                                                            /p
+                                                                                            <span class="tagcolor"
+                                                                                                style="color: mediumblue;">></span>
+                                                                                    </span>
                                                                                     <br>
-                                                                                    <!-- </div> -->
-                            <!-- btn_run_code -->
-                            <a href="./runcode.html" target="_blank">
-                                <button type="button" class="btn btn-primary" > Run</button>
+                                                                                    <span class="tagnamecolor"
+                                                                                        style="color: brown" ;>
+                                                                                        <span class="tagcolor"
+                                                                                            style="color: mediumblue;">
+                                                                                            <</span>
+                                                                                                /body
+                                                                                                <span class="tagcolor"
+                                                                                                    style="color: mediumblue;">></span>
+                                                                                        </span>
+                                                                                        <br>
+                                                                                        <span class="tagnamecolor"
+                                                                                            style="color: brown" ;>
+                                                                                            <span class="tagcolor"
+                                                                                                style="color: mediumblue;">
+                                                                                                <</span>
+                                                                                                    /html
+                                                                                                    <span class="tagcolor"
+                                                                                                        style="color: mediumblue;">></span>
+                                                                                            </span>
+                                                                                            <br>
+                                                                                            <!-- </div> -->
+                                    <!-- btn_run_code -->
+                                </div>
+                                <br>
+                            <a href="runcode.html" target="_blank">
+                                <button type="button" class="btn btn-primary" > Chạy</button>
                             </a>
                         </div>
                         <div class="col-12 col-md-6 info">
-                            <h2>Example Explained</h2>
+                            <h2>Giải thích ví dụ</h2>
                             <ul>
-                                <li>The <span>
-                                        <</span><span>!DOCTYPE html></span> declaration defines this document to be
-                                            HTML5</li>
-                                <li>The <span>
-                                        <</span><span>html></span> element is the root element of an HTML page</li>
-                                <li>The <span>
-                                        <</span><span>head></span> element contains meta information about the document
+                                <li>Các <span>
+                                        <</span><span>!DOCTYPE html></span> tuyên bố xác định tài liệu này là HTML5</li>
+                                <li>Phần <span>
+                                        <</span><span>html></span> tử này là phần tử gốc của trang HTML</li>
+                                <li>Phần <span>
+                                        <</span><span>head></span> tử chứa thông tin meta về tài liệu
                                 </li>
-                                <li>The <span>
-                                        <</span><span>title></span> element specifies a title for the document</li>
-                                <li>The <span>
-                                        <</span><span>body></span> element contains the visible page content
-                                <li>The <span>
-                                        <</span><span>h1></span> element defines a large heading</li>
-                                <li>The <span>
-                                        <</span><span>p></span> element defines a paragraph</li>
+                                <li>Phần <span>
+                                        <</span><span>title></span> tử chỉ định một tiêu đề cho tài liệu</li>
+                                <li>Phần <span>
+                                        <</span><span>body></span> tử chứa nội dung trang hiển thị
+                                <li>Phần <span>
+                                        <</span><span>h1></span> tử xác định một tiêu đề lớn</li>
+                                <li>Phần <span>
+                                        <</span><span>p></span>tử định nghĩa một đoạn</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
             <hr>
-            <!-- <section>
-                <div class="part-1">
-                    <div class="part-1-tittle">
-                        <h4>HTML Tags</h4>
-                    </div>
-                    <p>HTML tags are element names surrounded by angle brackets:</p>
-                    <div class="part-1-extag">
-                        <span>
-                            <</span><span>tagname></span>
-                                content goes here...
-                                <span>
-                                    <</span><span>/tagname></span>
-                    </div>
 
-                    <div class="part-1-description row">
-                        <ul>
-                            <li>HTML tags normally come in pairs like <span>
-                                    <</span>p><span></span> and <span>
-                                            <</span>/p><span></span></li>
-                            <li>The first tag in a pair is the start tag, the second tag is the end tag</li>
-                            <li>The end tag is written like the start tag, but with a forward slash inserted before the
-                                tag name</li>
-                            <li>The start tag is also called the opening tag, and the end tag the closing tag.</li>
-                        </ul>
-                    </div>
-                </div>
+             <!-- Button-Pre-Next -->
+            <section>
+                <a href="html-tutorial.html"><button type="button" class="btn btn-primary">&laquo; Trước</button></a>
+                <a href="css-tutorial.html"><button type="button" class="btn btn-primary">Sau &raquo;</button></a>
             </section>
             <hr>
-            <section>
-                <div class="part-1">
-                    <div class="part-1-tittle">
-                        <h4>Web Browsers</h4>
-                    </div>
-                    <br>
-                    <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and
-                        display them.
-                        <br><br>
-                        The browser does not display the HTML tags, but uses them to determine how to display the
-                        document:</p>
 
-                    <div class="part-1-description row">
-                        <img src="./img/web-browsers.png" alt="">
-                    </div>
-                </div>
-            </section>
-            <hr>
-            <section>
-                <div class="part-1">
-                    <div class="part-1-tittle">
-                        <h4>HTML Page Structure</h4>
-                    </div>
-                    <br>
-                    <p>Below is a visualization of an HTML page structure:
-
-                        <div class="part-1-description" style="color: #fff;">
-                            <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#a1bcda">
-                                &lt;html&gt;
-                                <div
-                                    style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color: #336192;">
-                                    &lt;head&gt;
-                                    <div
-                                        style="width:90%;border:1px solid grey;padding:5px;margin:20px;background-color: #7d93e2;">
-                                        &lt;title&gt;Page title&lt;/title&gt;
-                                    </div>
-                                    &lt;/head&gt;
-                                </div>
-                                <div
-                                    style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#336192">
-                                    &lt;body&gt;
-                                    <div
-                                        style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
-                                        <div
-                                            style="width:90%;border:1px solid grey;padding:5px;margin:20px;background-color: #7d93e2;">
-                                            &lt;h1&gt;This is a heading&lt;/h1&gt;</div>
-                                        <div
-                                            style="width:90%;border:1px solid grey;padding:5px;margin:20px;background-color: #7d93e2;">
-                                            &lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
-                                        <div
-                                            style="width:90%;border:1px solid grey;padding:5px;margin:20px;background-color: #7d93e2;">
-                                            &lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
-                                    </div>
-                                    &lt;/body&gt;
-                                </div>
-                                &lt;/html&gt;
-                            </div>
-                        </div>
-                        <br>
-                        <p>Only the content inside the
-
-                            <span><</span>body> section (the white area above) is displayed in a browser.</p>
-                        <hr>
-                            <div class="img-web">
-                            <img src="./img/view1.JPG" alt="">
-                        </div>
-                </div>
-            </section>
-            <hr> -->
-            
-            <!-- button_next_pre -->
-            <section>
-                <a href="#"><button type="button" class="btn btn-primary">&laquo; Home</button></a>
-                <a href="./css-tutorial.html"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
-            </section>
-            <hr>
         </div>
 
         <div class="col-2 silebar">
@@ -420,9 +302,11 @@
         </div>
     </div>
 
+
+
     <!-- btn_run_code -->
     <div class="btn-run-code">
-        <a class="btn-run-code-a" href="./runcode.html" target="b_lank">
+        <a class="btn-run-code-a" href="runcode.html" target="b_lank">
             <i class="fas fa-running"></i></a>
     </div>
 
@@ -441,7 +325,7 @@
     </footer>
 
 
-    <script src="./js/style.js"></script>
+    <script src="js/style.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

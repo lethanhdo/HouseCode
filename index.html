@@ -14,179 +14,130 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 <body>
-    <!-- Menu -->
-    <div class="menu-menu">
-        <ul class="menu">
-            <li><a class="logo" href="#">
-                <!-- <i class="fas fa-home"></i> -->
-                
-            </a></li>
-            <li><a href="./html-home.html">HTML</a>
-                <ul class="submenu">
-                    <li><a href="./html-tutorial.html">HTML Tutorial</a></li>
-                    <li><a href="#">HTML Forms</a></li>
-                    <li><a href="#">HTML Graphics</a></li>
-                    <li><a href="#">HTML Media</a></li>
-                    <li><a href="#">HTML APIs</a></li>
-                    <li><a href="#">HTML Examples</a></li>
-                    <li><a href="#">HTML References</a></li>
-                </ul>
-            </li>
-            <li><a href="./js-home.html">CSS</a>
-                <ul class="submenu">
-                    <li><a href="./css-tutorial.html">CSS Tutorial</a></li>
-                    <li><a href="#">CSS Advanced</a></li>
-                    <li><a href="#">CSS Responsive</a></li>
-                    <li><a href="#">CSS Grid</a></li>
-                    <li><a href="#">CSS Examples</a></li>
-                    <li><a href="#">CSS References</a></li>
-                </ul>
-            </li>
-            <li><a href="./js-home.html">JavaScript</a>
-                <ul class="submenu">
-                    <li><a href="./js-tutorial.html">JS Tutorial</a></li>
-                    <li><a href="#">JS Forms</a></li>
-                    <li><a href="#">JS Objects</a></li>
-                    <li><a href="#">JS Functions</a></li>
-                    <li><a href="#">JS HTML DOM</a></li>
-                    <li><a href="#">JS Browser BOM</a></li>
-                    <li><a href="#">JS AJAX</a></li>
-                    <li><a href="#">JS JSON</a></li>
-                    <li><a href="#">JS vs jQuery</a></li>
-                    <li><a href="#">JS Examples</a></li>
-                    <li><a href="#">JS References</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#">How to</a>
-            </li>
-            <li><a href="#">More</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">HMTL</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Server Side</a></li>
-                    <li><a href="#">Web Building</a></li>
-                    <li><a href="#">XML</a></li>
-                </ul> -->
-            </li>
-            <li><a href="./exercise.html">Exercises</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">Exercises</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Certificates</a></li>
-                </ul> -->
-            </li>
-            <li>
-                <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-                      aria-label="Search">
-                    <i class="fas fa-search" aria-hidden="true" style="color: #fff;"></i>
-                  </form>
-                
-            </li>
-        </ul>
-    </div>
-
-    <!-- Side Navigation -->
-
-    <!-- Header -->
-    <header class="w3-container w3-theme w3-padding" id="myHeader">
-        <!-- <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>  -->
-        <!-- <div class="w3-center">
-  <h4>BEAUTIFUL RESPONSIVE WEB SITES</h4>
-  <h1 class="w3-xxxlarge w3-animate-bottom">BUILT WITH W3.CSS</h1>
-    <div class="w3-padding-32">
-      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
-    </div>
-  </div> -->
-    </header>
-
    
-    <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-third">
-            <div class="w3-card w3-container w3-card-html" >
-                <a href="./html-home.html" class="overlay">
-                </a>
-                <a href="#">
-                    <i class="far fa-gem diamond-html w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-                        <h3>HTML</h3><br>
-                        <p>The language for building web pages</p>
-                        <!-- <p>Mobile first fluid grid</p>
-                        <p>Fits any screen sizes</p>
-                        <p>PC Tablet and Mobile</p> -->
-                        <button type="button" class="btn btn-primary">Learn</button>
-                </a>
+    <!--Navbar -->
+    <section class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-coffeecode.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html-home.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="css-home.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="js-home.html">JavaScript</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Nhập vào đây" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+              </form>
             </div>
+        </nav>
+    </section>
+    
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner">
+            <img src="img/ban.jpg" alt="">
         </div>
+    </section>
 
-        <div class="w3-third">
-            <div class="w3-card w3-container w3-card-css" >
-                <a href="./css-home.html" class="overlay">
-                </a>
-                <a href="#">
-                    <i class="far fa-gem diamond-css w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-                    <h3>CSS</h3><br>
-                    <p>The language for styling web pages</p>
-                    <!-- <p>Easy to learn</p>
-                    <p>No need for jQuery</p>
-                    <p>No JavaScript library</p> -->
-                    <button type="button" class="btn btn-primary">Learn</button>
-                </a>
-            </div>
-        </div>
-
-        <div class="w3-third">
-            <div class="w3-card w3-container w3-card-js">
-                <a href="./js-home.html" class="overlay">
-                </a>
-                <a href="./js-home.html">
-                    <i class="far fa-gem diamond-js w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-                    <h3>JavaScript</h3><br>
-                    <p>The language for programming web </p>
-                    <!-- <p>Bold colors and shadows</p>
-                    <p>Equal across platforms</p>
-                    <p>Equal across devices</p> -->
-                    <button type="button" class="btn btn-primary">Learn</button>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="containerr">
-        <div class="html row">
-            <div class="col-12 col-md-6 html-desciption">
-                <h2>INTRODUCTION HTML ?</h2>
-                <div class="text-scroll text-scroll-html" style="height: 200px; height: 300px;">
-                    <p>
-                        <h3>What is HTML ?</h3>
-                        HTML is the standard markup language for creating Web pages.
-                        <br>
-                        <ul>
-                            <li>HTML stands for Hyper Text Markup Language</li>
-                            <li>HTML describes the structure of a Web page</li>
-                            <li>HTML consists of a series of elements</li>
-                            <li>HTML elements tell the browser how to display the content</li>
-                            <li>HTML elements are represented by tags</li>
-                            <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
-                            <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>                        </ul>
-                        </ul>
-                        <!-- <h3>HTML Tags</h3>
-                        <ul>
-                            <li>HTML tags normally come in pairs like <span><</span><span>p</span><span>></span> and <span><</span><span>/p</span><span>></span></li>
-                            <li>The first tag in a pair is the start tag, the second tag is the end tag</li>
-                            <li>The end tag is written like the start tag, but with a forward slash inserted before the tag name</li>
-                        </ul> -->
-                        <a href="./html.html">See details</a>
-                    </p>
+    <!-- diamond -->
+    <section class="diamond">
+        <div class="w3-row-padding w3-center w3-margin-top diamond">
+            <div class="w3-third w3-third-html">
+                <div class="w3-card w3-container w3-card-html" >
+                    <a href="#" class="overlay">
+                    </a>
+                    <a href="#" class="icon-dia">
+                        <i class="far fa-gem diamond-html w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                            <h3>HTML</h3><br>
+                            <p>Ngôn ngữ để xây dựng trang web</p>
+                    </a>
+                    <a href="#" class="description">
+                        <p>HTML là ngôn ngữ đánh dấu tiêu chuẩn cho các trang Web.
+                            <br>
+                            Với HTML, bạn có thể tạo Trang web của riêng mình.
+                            <br>
+                            HTML như là bộ khung của trang web. 
+                            <br>
+                            Ví dụ: bạn có thể hiểu một cách đơn giản 
+                            HTML là một viên kim cương thô...
+                        </p>
+                    </a>
                 </div>
             </div>
+    
+            <div class="w3-third w3-third-css">
+                <div class="w3-card w3-container w3-card-css" >
+                    <a href="./css-home.html" class="overlay">
+                    </a>
+                    <a href="#">
+                        <i class="far fa-gem diamond-css w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                        <h3>CSS</h3><br>
+                        <p>Ngôn ngữ mô tả phong cách của một tài liệu HTML.</p>
+                    </a>
+                    <a href="#" class="description">
+                        <p>CSS là ngôn ngữ mô tả phong cách của một tài liệu HTML.
+                             <br>
+                            CSS mô tả cách các phần tử HTML sẽ được hiển thị.
+                            <br>
+                            Ví dụ: bạn có thể hiểu một cách đơn giản 
+                            CSS làm viên kim cương thô kia có màu đỏ...
+                        </p>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="w3-third w3-third-js">
+                <div class="w3-card w3-container w3-card-js">
+                    <a href="./js-home.html" class="overlay">
+                    </a>
+                    <a href="./js-home.html">
+                        <i class="fas fa-gem diamond-js w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                        <h3>JavaScript</h3><br>
+                        <p>Ngôn ngữ lập trình của HTML và Web.</p>
+                        <!-- <p>Bold colors and shadows</p>
+                        <p>Equal across platforms</p>
+                        <p>Equal across devices</p> -->
+                    </a>
+                    <a href="#" class="description">
+                        <p>JavaScript là ngôn ngữ lập trình của HTML và Web.
+                            <br>
+                            Với JavaScript, bạn có thể lập trình hành vi của các trang web
+                            <br>
+                            JavaScript như là sự sống của trang web. 
+                            <br>
+                            Ví dụ: bạn có thể hiểu một cách đơn giản 
+                            JavaScript giúp viên kim cương của bạn có thể chuyển động ...
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- container -->
+    <section class="containerr">
+        <div class="html row">
             <div class="col-12 col-md-6 html-example">
-                <h2>HTML EXAMPLE</h2>
+                <h2>VÍ DỤ CODE HTML</h2>
                 <div html-example-first>
                     <div class="input-code">
-                    <!-- <textarea id="w3mission" rows="12" cols="50"> -->
                         <span class="tagnamecolor" style="color: brown";>
                             <span class="tagcolor" style="color: mediumblue;"><</span>
                             DOCTYPE
@@ -218,24 +169,19 @@
                         <br><br>
                         <span class="tagnamecolor" style="color: brown";>
                             <span class="tagcolor" style="color: mediumblue;"><</span>
-                            h1
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                            <span class="tagcolor" style="color: black;">This is a heading</span>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            /h1
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                        </span>
-                        <br>
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
                             p
                             <span class="tagcolor" style="color: mediumblue;">></span>
-                            <span class="tagcolor" style="color: black;">This is a paragraph.</span>
+                            <span class="tagcolor" style="color: black;"></span>
+
+                            <!-- input -->
+                            <input type="text" id="input-html" onkeyup="input()">
+
                             <span class="tagcolor" style="color: mediumblue;"><</span>
                             /p
                             <span class="tagcolor" style="color: mediumblue;">></span>
                         </span>
                         <br>
+                        <br>
                         <span class="tagnamecolor" style="color: brown";>
                             <span class="tagcolor" style="color: mediumblue;"><</span>
                             /body
@@ -248,275 +194,117 @@
                             <span class="tagcolor" style="color: mediumblue;">></span>
                         </span>
                         <br>
-                    <!-- </textarea> -->
+                        <hr>
+                        <p>Hãy nhập vào khoảng trống phía trên bất kỳ thứ gì.<br>
+                      </p>
                     </div>               
-                    
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary btn-run" data-toggle="modal" data-target="#exampleModalLong">
-                    See result
-                    </button>
-  
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog"  role="document">
-                        <div class="modal-content">
-                            <!-- <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div> -->
-                            <div class="modal-body">
-                            <h1>This is a heading</h1>
-                            <p>This is a paragraph.</p>
-                            </div>
-                            <!-- <div class="modal-footer"> -->
-                            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 html-example">
+                <h2>KẾT QUẢ </h2>
+                <div html-example-first>
+                    <div class="input-code">
+                        <span id="kq-html"></span>
+                    </div>               
                 </div>
             </div>
         </div>
-            <!-- <div class="col-12 col-md-4 html-display">
-                <h2>DISPLAY</h2>
-                <h1>This is a heading</h1>
-                <p>This is a paragraph.</p>
-            </div> -->
 
         <!-- css -->
         <div class="cs bg">
             <div class="html css row">
                 <div class="col-12 col-md-6 html-example">
-                    <h2>CSS EXAMPLE</h2>
+                    <h2>VÍ DỤ CODE CSS</h2>
                     <div html-example-first>
                         <div class="input-code">
-                        <!-- <textarea id="w3mission" rows="12" cols="50"> -->
-                            <span class="tagnamecolor" style="color: brown";>body 
-                                <span class="tagcolor" style="color: black;">{</span><br>
-                                <span class="tagcolor" style="color: red;">&emsp;background-color</span>
-                                <span class="tagcolor" style="color: black;">:</span>
-                                <span class="tagcolor" style="color: mediumblue;">lightblue</span>
-                                <span class="tagcolor" style="color: black;">;</span><br>
-                                <span class="tagcolor" style="color: black;">}</span>
-                            </span>
-                            <br>    
-                            <span class="tagnamecolor" style="color: brown";>h1 
-                                <span class="tagcolor" style="color: black;">{</span><br>
-                                <span class="tagcolor" style="color: red;">&emsp;color</span>
-                                <span class="tagcolor" style="color: black;">:</span>
-                                <span class="tagcolor" style="color: mediumblue;">white</span>
-                                <span class="tagcolor" style="color: black;">;</span><br>
-                                <span class="tagcolor" style="color: red;">&emsp;text-align</span>
-                                <span class="tagcolor" style="color: black;">:</span>
-                                <span class="tagcolor" style="color: mediumblue;">center</span>
-                                <span class="tagcolor" style="color: black;">;</span><br>
-                                <span class="tagcolor" style="color: black;">}</span>
-                            </span>
-                            <br> 
                             <span class="tagnamecolor" style="color: brown";>p 
                                 <span class="tagcolor" style="color: black;">{</span><br>
-                                <span class="tagcolor" style="color: red;">&emsp;font-family</span>
-                                <span class="tagcolor" style="color: black;">:</span>
-                                <span class="tagcolor" style="color: mediumblue;">verdana</span>
-                                <span class="tagcolor" style="color: black;">;</span><br>
                                 <span class="tagcolor" style="color: red;">&emsp;font-size</span>
                                 <span class="tagcolor" style="color: black;">:</span>
-                                <span class="tagcolor" style="color: mediumblue;">20px</span>
+                                <!-- input -->
+                                <input type="text" id="input-css-fontsize" onkeyup="input()">
+                                <span class="tagcolor" style="color: mediumblue;">px</span>
+
+                                <span class="tagcolor" style="color: black;">;</span><br>
+                                <br>
+                                <span class="tagcolor" style="color: red;">&emsp;color</span>
+                                <span class="tagcolor" style="color: black;">:</span>
+                                <!-- input -->
+                                <input type="text" id="input-css-color" onkeyup="input()">
                                 <span class="tagcolor" style="color: black;">;</span><br>
                                 <span class="tagcolor" style="color: black;">}</span>
                             </span>
-                        <!-- </textarea> -->
+                            <hr>
+                            <p>Sau đó hãy nhập vào 2 ô: <br>
+                                -Kích thước font chữ (Nhập số) <br>
+                                -Màu sắc chữ (Nhập màu bằng tiếng anh)
+                            </p>
                         </div>               
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary btn-run" data-toggle="modal" data-target="#exampleModalLong2">
-                        See result
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog"  role="document">
-                            <div class="modal-content">
-                                <!-- <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div> -->
-                                <div class="modal-body" style="background-color: lightblue";>
-                                <h1 style="color: white; text-align: center;">This is a heading</h1>
-                                <p style="font-family: verdana;font-size: 20px;">This is a paragraph.</p>
-                                </div>
-                                <!-- <div class="modal-footer"> -->
-                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                </div>
-                            </div>
-                        </div>
                     </div>
         
                 </div>  
                 <div class="col-12 col-md-6 html-desciption">
-                    <h2>What is CSS ?</h2>
-                    <div class="text-scroll text-scroll-css" style="height: 200px; height: 300px;">
-                        <p>
-                            <h3>What is CSS ?</h3>
-                            <ul>
-                                <li>CSS stands for Cascading Style Sheets</li>
-                                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-                                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
-                                <li>External stylesheets are stored in CSS files</li>
-                            </ul>
-                            <h3>Why use CSS ?</h3>
-                            CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
-                            <br>
-                            
-                            
-                            <a href="#">See details</a>
-                        </p>
+                    <h2>KẾT QUẢ</h2>
+                    <div html-example-first>
+                        <div class="input-code">
+                           <span id="kq-css"></span>
+                        </div>               
                     </div>
                 </div>
             </div>
         </div>
-           
+            
     
-        <div class="js html row">
-            <div class="col-12 col-md-6 html-desciption">
-                <h2>JAVASCRIPT INTRODUCTION</h2>
-                <div class="text-scroll text-scroll-js" style="height: 200px; height: 300px;">
-                    <p>
-                        <h3>What is JavaScript ?</h3>
-                        JavaScript is the programming language of HTML and the Web.                        <br>
-                        <h3>Why Learn JavaScript ?</h3>
-                        JavaScript is one of the 3 languages all web developers must learn:
-                        <ul>
-                            <li> 1. HTML to define the content of web pages</li>
-                            <li>2. CSS to specify the layout of web pages</li>
-                            <li>3. JavaScript to program the behavior of web pages</li>
-                        </ul>
-                        Web pages are not the only place where JavaScript is used.
-                            Many desktop and server programs use JavaScript. 
-                            
-                            <br>
-                        <!-- <h3>Learning Speed</h3>
-                        In this tutorial, the learning speed is your choice. <br>
-                        Everything is up to you. <br>
-                        If you are struggling, take a break, or reread the material. <br>
-                        Always make sure you understand all the "Run" examples. <br> -->
-                        <a href="#">See details</a>
-                    </p>
-                </div>
-            </div>
+        <div class="js html js row">
             <div class="col-12 col-md-6 html-example">
-                <h2>HTML EXAMPLE</h2>
+                <h2>VÍ DỤ CODE JAVASCRIPT</h2>
                 <div html-example-first>
                     <div class="input-code">
-                    <!-- <textarea id="w3mission" rows="12" cols="50"> -->
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            DOCTYPE
-                            <span class="attributecolor"> html</span>
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                        </span>
-                        <br>    
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            html
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                        </span>
-                        <br>
-                    
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            body
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                        </span>
-                        <br>
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            h3
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                            <span class="tagcolor" style="color: black;">This is a heading</span>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            /h3
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                        </span>
-                        <br>
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            button
-                            <span style="color: red;">type</span>=
-                            <span style="color: mediumblue;">"button"</span>
-                            <span style="color: red;">onclick</span>=
-                            <span style="color: mediumblue;">"document.getElementById('demo').innerHTML = Date()"></span>
-                            <br><span class="tagcolor" style="color: black;">Click me to display Date and Time.</span>
-                            <br><span class="tagcolor" style="color: mediumblue;"><</span>
-                            /button
-                            <span class="tagcolor" style="color: mediumblue;">></span>
+                        <span class="tagnamecolor" style="color: brown";>p 
+                            <span class="tagcolor" style="color: black;">{</span><br>
+                            <span class="tagcolor" style="color: red;">&emsp;left</span>
+                            <span class="tagcolor" style="color: black;">:</span>
+                            <!-- input -->
+                            <input type="text" id="input-js" onkeyup="input()">
+                            <span class="tagcolor" style="color: mediumblue;">px</span>
+
+                            <span class="tagcolor" style="color: black;">;</span><br>
                             <br>
-
-                            <span class="tagcolor" style="color: mediumblue;"><</span>p
-                            <span style="color: red;">id</span>=
-                            <span class="tagcolor" style="color: mediumblue;">demo"><</span>/p                           
-                            <span class="tagcolor" style="color: mediumblue;">></span>
+                            <span class="tagcolor" style="color: red;">&emsp;color</span>
+                            <span class="tagcolor" style="color: black;">:</span>
+                            <!-- input -->
+                            <input type="text" id="input-css-color" onkeyup="input()">
+                            <span class="tagcolor" style="color: black;">;</span><br>
+                            <span class="tagcolor" style="color: black;">}</span>
                         </span>
-                        <br>
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            /body
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                        </span>
-                        <br>
-                        <span class="tagnamecolor" style="color: brown";>
-                            <span class="tagcolor" style="color: mediumblue;"><</span>
-                            /html
-                            <span class="tagcolor" style="color: mediumblue;">></span>
-                        </span>
-                        <br>
-                    <!-- </textarea> -->
+                        <hr>
+                        <p>Sau đó hãy nhập vào ô: <br>
+                            -Nhập "left" hoặc "right" <br>
+                        </p>
                     </div>               
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary btn-run" data-toggle="modal" data-target="#exampleModalLong3">
-                        See result
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog"  role="document">
-                            <div class="modal-content">
-                                <!-- <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div> -->
-                                <div class="modal-body" ;>
-                                    <h3>My First JavaScript</h3>
-
-                                    <button type="button"
-                                    onclick="document.getElementById('demo').innerHTML = Date()">
-                                    Click me to display Date and Time.</button>
-                                    
-                                    <p id="demo"></p>
-                                </div>
-                                <!-- <div class="modal-footer"> -->
-                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                </div>
-                            </div>
-                        </div>
                 </div>
     
+            </div>  
+            <div class="col-12 col-md-6 html-example">
+                <h2>KẾT QUẢ </h2>
+                <div html-example-first>
+                    <div class="input-code result-js">
+                        <span id="kq-js" class="diamond-js"></span>
+                    </div>               
+                </div>
             </div>
+            
         </div>
 
 
         <!-- btn_run_code -->
-    <div class="btn-run-code">
-        <a class="btn-run-code-a" href="./runcode.html" target="b_lank">
-            <i class="fas fa-running"></i></a>
-    </div>
-        
-    </div>
+        <div class="btn-run-code">
+            <a class="btn-run-code-a" href="./runcode.html" target="b_lank">
+                <i class="fas fa-running"></i></a>
+        </div>
+            
+    </section>
+    
 
     
     <!-- Footer -->
