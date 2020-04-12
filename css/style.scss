@@ -69,8 +69,11 @@ a{
 //navbar
 .navbar{
     width: 100%;
-    padding: 0;
+    padding: 0!important;
     background: #ececec;
+    img{
+        width: 120px;
+    }
 }
 
 // banner
@@ -166,7 +169,7 @@ a{
     }
 }
 
-
+//container
 .containerr{
     margin: auto !important;
     margin-top: 40px !important;
@@ -175,7 +178,10 @@ a{
         box-shadow: 2px 2px 2px gray;
     }
     .input-code{
-       
+       overflow: hidden;
+       border-collapse: collapse;
+       padding: 3%;
+       background: #fff;
         height: 300px;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
@@ -304,6 +310,12 @@ a{
     .bg{
         background-color: #dfe6e9;
     }
+    .result-js{
+        position: relative;
+        transition: all 2s;
+        
+
+    }
     
 }
 .btn-primary{
@@ -390,14 +402,8 @@ h2{
     background-color: black;
     opacity: 0.3;
 }
-.modal-dialog{
-    margin:10% auto!important;
-}
 
-.active{
-    background-color: #138792!important;
-}
-
+//btn-run-code
 .btn-run-code{
     position: fixed;
     width: 40px;
@@ -424,5 +430,5 @@ h2{
     }
 }
 .btn-run-code:hover{
-    background-color: #138792;
+    background-color: #000000;
 }

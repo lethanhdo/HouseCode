@@ -75,5 +75,25 @@ function move() {
   }
 }
 
+//input code 
+function input(){
+  var html = document.getElementById("input-html");
+  var css_fontsize = document.getElementById("input-css-fontsize");
+  var css_color = document.getElementById("input-css-color");
+  var js = document.getElementById("input-js");
 
+  document.getElementById("kq-html").innerHTML = html.value;
+
+  document.getElementById("kq-css").innerHTML = html.value;
+  document.getElementById("kq-css").style.fontSize = css_fontsize.value +"px";
+  document.getElementById("kq-css").style.color = css_color.value;
+
+  document.getElementById("kq-js").innerHTML = html.value;
+  document.getElementById("kq-js").style.fontSize = css_fontsize.value +"px";
+  document.getElementById("kq-js").style.color = css_color.value;
+  if(js.value==="around"){
+    document.getElementById("kq-js").className = "diamond-js";
+  }
+}
+input();
 

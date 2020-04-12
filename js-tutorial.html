@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css-pages/style.css">
+<link rel="stylesheet" href="css-pages/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -14,190 +14,125 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 <body>
-    <!-- Menu -->
-    <div class="menu-menu">
-        <ul class="menu">
-            <li><a class="logo" href="index.html">
-                    <!-- <i class="fas fa-home"></i> -->
-
-                </a></li>
-            <li><a href="./html-home.html">HTML</a>
-                <ul class="submenu">
-                    <li><a href="./html-tutorial.html">HTML Tutorial</a></li>
-                    <li><a href="#">HTML Forms</a></li>
-                    <li><a href="#">HTML Graphics</a></li>
-                    <li><a href="#">HTML Media</a></li>
-                    <li><a href="#">HTML APIs</a></li>
-                    <li><a href="#">HTML Examples</a></li>
-                    <li><a href="#">HTML References</a></li>
-                </ul>
+   <!-- navbar -->
+   <section class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo-coffeecode.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
             </li>
-            <li><a href="./css-home.html">CSS</a>
-                <ul class="submenu">
-                    <li><a href="./css-tutorial.html">CSS Tutorial</a></li>
-                    <li><a href="#">CSS Advanced</a></li>
-                    <li><a href="#">CSS Responsive</a></li>
-                    <li><a href="#">CSS Grid</a></li>
-                    <li><a href="#">CSS Examples</a></li>
-                    <li><a href="#">CSS References</a></li>
-                </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="html-home.html">HTML</a>
             </li>
-            <li class="active" style="background-color: #138792!important;">
-                <a href="./js-home.html">JavaScript</a>
-                <ul class="submenu">
-                    <li><a href="./js-tutorial.html">JS Tutorial</a></li>
-                    <li><a href="#">JS Forms</a></li>
-                    <li><a href="#">JS Objects</a></li>
-                    <li><a href="#">JS Functions</a></li>
-                    <li><a href="#">JS HTML DOM</a></li>
-                    <li><a href="#">JS Browser BOM</a></li>
-                    <li><a href="#">JS AJAX</a></li>
-                    <li><a href="#">JS JSON</a></li>
-                    <li><a href="#">JS vs jQuery</a></li>
-                    <li><a href="#">JS Examples</a></li>
-                    <li><a href="#">JS References</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#">How to</a>
-            </li>
-            <li><a href="#">More</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">HMTL</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Server Side</a></li>
-                    <li><a href="#">Web Building</a></li>
-                    <li><a href="#">XML</a></li>
-                </ul> -->
-            </li>
-            <li><a href="./exercise.html">Exercises</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">Exercises</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Certificates</a></li>
-                </ul> -->
-            </li>
-            <li>
-                <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-                        aria-label="Search">
-                    <i class="fas fa-search" aria-hidden="true" style="color: #fff;"></i>
-                </form>
-
-            </li>
-        </ul>
-    </div>
+            <li class="nav-item">
+                <a class="nav-link" href="css-home.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="js-home.html">JavaScript</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Nhập vào đây" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+          </form>
+        </div>
+    </nav>
+    </section>
 
     <!-- contain -->
     <div class="contain-html row">
         <div class="col-2 silebar">
-            <nav>
-                <ul>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="./js-tutorial.html" class="active" style="background-color: #138792; color: #fff!important;">JS Tutorial</a>
-                        <ul class="sub-menu">
-                            <li><a href="./js-statements.html">JS Statements</a></li>
-                            <li><a href="#">JS Variables</a></li>
-                            <li><a href="#">JS Functions</a></li>
-                            <li><a href="#">JS Objects</a></li>
-                            <li><a href="#">JS Events</a></li>
-                            <li><a href="#">JS Arrays</a></li>
-                            <li> <a href="#">JS Conditions</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#" class="big-item">JS Forms</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">JS Forms</a></li>
-                            <li><a href="#">Forms API</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS Objects</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Object Definitions</a></li>
-                            <li><a href="#">Object Properties</a></li>
-                            <li><a href="#">Object Methods</a></li>
-                            <li><a href="#">Object Constructors </a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS Functions</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Function Definitions</a></li>
-                            <li><a href="#">Function Parameters</a></li>
-                            <li><a href="#">Function Call</a></li>
-                            <li><a href="#">Function Apply</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS HTML DOM</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">DOM Methods</a></li>
-                            <li><a href="#">DOM Document</a></li>
-                            <li><a href="#">DOM Elements</a></li>
-                            <li><a href="#">DOM HTML</a></li>
-                            <li><a href="#">DOM CSS</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu-parent" tab-index="0">
-                        <a href="#">JS Browser BOM</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">JS Window</a></li>
-                            <li><a href="#">JS Screen</a></li>
-                            <li><a href="#">JS Location</a></li>
-                            <li><a href="#">JS History</a></li>
-                            <li><a href="#">JS Navigator</a></li>
-                            <li><a href="#">JS Cookies</a></li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </nav>
         </div>
 
         <div class="col-8 contain-body">
             <section>
-               
-                <a href="./js-home.html"><button type="button" class="btn btn-primary">&laquo; Previous</button></a>
-                <a href="./js-statements.html"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
+                <a href="js-home.html"><button type="button" class="btn btn-primary">&laquo; Previous</button></a>
+                <a href="#"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
             </section>
             <hr>
             
             <section>
+                <h4>CHUỖI VIDEO HƯỚNG DẪN JAVASCRIPT CƠ BẢN</h4>
                 <div class="contain-videos row">
-                   
+                    
                     <div class="col-12 col-md-4 form-video">
-                        <a href="#">JS Statements</a>
+                        <a href="#">HTML Headings</a>
                         <video class="video-fluid z-depth-1"  loop controls muted>
-                            <source src="./video/What is JavaScript-.mp4" type="video/mp4" />
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
                           </video>
-                    </div><div class="col-12 col-md-4 form-video">
-                        <a  href="#">JS Variables</a>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a  href="#">HTML Paragraphs</a>
                         <video class="video-fluid z-depth-1"  loop controls muted>
-                            <source src="./video/What is JavaScript-.mp4" type="video/mp4" />
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
                           </video>
-                    </div><div class="col-12 col-md-4 form-video">
-                        <a href="#">JS Functions</a>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Colors</a>
                         <video class="video-fluid z-depth-1"  loop controls muted>
-                            <source src="./video/What is JavaScript-.mp4" type="video/mp4" />
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
                           </video>
-                    </div><div class="col-12 col-md-4 form-video">
-                        <a href="#">JS Objects</a>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Links</a>
                         <video class="video-fluid z-depth-1"  loop controls muted>
-                            <source src="./video/What is JavaScript-.mp4" type="video/mp4" />
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
                           </video>
-                    </div><div class="col-12 col-md-4 form-video">
-                        <a href="#">JS Events</a>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Images</a>
                         <video class="video-fluid z-depth-1"  loop controls muted>
-                            <source src="./video/What is JavaScript-.mp4" type="video/mp4" />
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
                           </video>
-                    </div><div class="col-12 col-md-4 form-video">
-                        <a href="#">JS Arrays</a>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Layouts</a>
                         <video class="video-fluid z-depth-1"  loop controls muted>
-                            <source src="./video/What is JavaScript-.mp4" type="video/mp4" />
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
+                          </video>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Headings</a>
+                        <video class="video-fluid z-depth-1"  loop controls muted>
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
+                          </video>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a  href="#">HTML Paragraphs</a>
+                        <video class="video-fluid z-depth-1"  loop controls muted>
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
+                          </video>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Colors</a>
+                        <video class="video-fluid z-depth-1"  loop controls muted>
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
+                          </video>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Links</a>
+                        <video class="video-fluid z-depth-1"  loop controls muted>
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
+                          </video>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Images</a>
+                        <video class="video-fluid z-depth-1"  loop controls muted>
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
+                          </video>
+                    </div>
+                    <div class="col-12 col-md-4 form-video">
+                        <a href="#">HTML Layouts</a>
+                        <video class="video-fluid z-depth-1"  loop controls muted>
+                            <source src="video/whatishtml.mp4" type="video/mp4" />
                           </video>
                     </div>
                 </div>
@@ -205,22 +140,18 @@
 
             <section>
                
-                <a href="./js-home.html"><button type="button" class="btn btn-primary">&laquo; Previous</button></a>
-                <a href="./js-statements.html"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
+                <a href="js-home.html"><button type="button" class="btn btn-primary">&laquo; Previous</button></a>
+                <a href="#"><button type="button" class="btn btn-primary">Next &raquo;</button></a>
             </section>
             <hr>
         </div>
 
         <div class="col-2 silebar">
-
-
         </div>
     </div>
-
-
     <!-- btn_run_code -->
     <div class="btn-run-code">
-        <a class="btn-run-code-a" href="./runcode.html" target="b_lank">
+        <a class="btn-run-code-a" href="runcode.html" target="b_lank">
             <i class="fas fa-running"></i></a>
     </div>
 
@@ -239,7 +170,7 @@
     </footer>
 
 
-    <script src="./js/style.js"></script>
+    <script src="js/style.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
